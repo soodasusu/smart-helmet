@@ -1,0 +1,17 @@
+{
+  "name": "智鉴云卫头盔 - 智能驾驶监控系统",
+  "short_name": "智鉴云卫",
+  "description": "树莓派视频监控系统，实时录制、上传和监控违法驾驶行为",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a1929",
+  "theme_color": "#0a1929",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "64x64",
+      "type": "image/svg+xml"
+    }
+  ]
+}

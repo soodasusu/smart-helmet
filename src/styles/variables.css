@@ -1,0 +1,125 @@
+/* ══════════════════════════════════════════════════
+   设计令牌 — 智鉴云卫 Design System（深空黑 · 极光冰蓝）
+   赛博极简科技风：磨砂玻璃拟态 + 低饱和发光 + 冷白
+   ══════════════════════════════════════════════════ */
+
+:root {
+  /* ═══ 主色板 — 极光冰蓝 ═══ */
+  --color-primary-50:  #0a1a2f;
+  --color-primary-100: #0e2a4a;
+  --color-primary-200: #143a66;
+  --color-primary-300: #1e5a99;
+  --color-primary-400: #2fa8e0;
+  --color-primary-500: #22d3ee;   /* 主交互色 · 极光青 */
+  --color-primary-600: #38bdf8;   /* hover · 冰蓝 */
+  --color-primary-700: #6366f1;   /* 极光紫（少量点缀） */
+
+  /* ═══ 文字色 — 冷白 ═══ */
+  --color-text:           #e6f1ff;
+  --color-text-secondary: #8aa0c0;
+  --color-text-tertiary:  #5a6f8e;
+  --color-text-inverse:   #050810;
+
+  /* ═══ 背景色 — 深空黑 ═══ */
+  --color-bg:           #050810;
+  --color-bg-page:      #070b16;
+  --color-bg-subtle:    #0c1322;
+  --color-bg-card:      rgba(148, 184, 255, 0.05);
+  --color-bg-card-hover:rgba(148, 184, 255, 0.09);
+  --color-bg-input:     rgba(8, 16, 32, 0.6);
+  --color-bg-overlay:   rgba(3, 6, 14, 0.72);
+  --color-bg-sidebar:   rgba(8, 13, 26, 0.72);
+  --color-bg-modal:     rgba(3, 6, 14, 0.78);
+
+  /* ═══ 状态色（冷调发光） ═══ */
+  --color-success:      #34d399;
+  --color-success-light:#4ade80;
+  --color-success-bg:   rgba(52, 211, 153, 0.12);
+  --color-danger:        #fb7185;
+  --color-danger-light: #f87171;
+  --color-danger-bg:    rgba(251, 113, 133, 0.12);
+  --color-warning:      #fbbf24;
+  --color-warning-light:#fcd34d;
+  --color-warning-bg:   rgba(251, 191, 36, 0.12);
+  --color-info:         #38bdf8;
+  --color-info-bg:      rgba(56, 189, 248, 0.12);
+
+  /* ═══ 边框色 — 低饱和发光 ═══ */
+  --border-color:       rgba(120, 170, 230, 0.14);
+  --border-color-hover:  rgba(34, 211, 238, 0.45);
+  --border-color-focus:  rgba(34, 211, 238, 0.6);
+  --border-glow:        rgba(34, 211, 238, 0.35);
+
+  /* ═══ 圆角 ═══ */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 18px;
+  --radius-2xl: 22px;
+  --radius-3xl: 28px;
+  --radius-full: 50%;
+
+  /* ═══ 间距 ═══ */
+  --space-xs: 6px;
+  --space-sm: 10px;
+  --space-md: 15px;
+  --space-lg: 20px;
+  --space-xl: 25px;
+  --space-2xl: 35px;
+  --space-3xl: 45px;
+  --space-4xl: 60px;
+
+  /* ═══ 字号 ═══ */
+  --font-size-xs: 12px;
+  --font-size-sm: 13px;
+  --font-size-base: 14px;
+  --font-size-md: 15px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-2xl: 20px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 30px;
+  --font-size-5xl: 36px;
+
+  /* ═══ 字重 ═══ */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* ═══ 阴影 — 极光发光 ═══ */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.55);
+  --shadow-xl: 0 24px 60px rgba(0, 0, 0, 0.65);
+  --shadow-card: 0 8px 28px rgba(3, 10, 25, 0.5);
+  --shadow-glow: 0 0 18px rgba(34, 211, 238, 0.35);
+  --shadow-glow-strong: 0 0 32px rgba(34, 211, 238, 0.55);
+
+  /* ═══ 过渡 ═══ */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ═══ z-index 层级 ═══ */
+  --z-bg: 0;
+  --z-content: 2;
+  --z-header: 10;
+  --z-sidebar: 15;
+  --z-overlay: 20;
+  --z-modal: 100;
+  --z-toast: 200;
+  --z-tooltip: 300;
+
+  /* ═══ 侧边栏 ═══ */
+  --sidebar-width: 236px;
+  --sidebar-collapsed-width: 72px;
+  --header-height: 64px;
+
+  /* ═══ 字体 ═══ */
+  --font-family: 'PingFang SC', 'Microsoft YaHei', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-mono: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', Consolas, monospace;
+}

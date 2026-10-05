@@ -1,0 +1,147 @@
+/* ════════════════════════════════════════
+   共享动画 Keyframes — 深空黑极光主题
+   ════════════════════════════════════════ */
+
+/* ── 科幻网格移动 ── */
+@keyframes gridMove {
+  0%   { transform: perspective(600px) rotateX(60deg) translateY(0) translateZ(-120px); }
+  100% { transform: perspective(600px) rotateX(60deg) translateY(50px) translateZ(-120px); }
+}
+
+/* ── 头箍脉冲 ── */
+@keyframes helmetPulse {
+  0%, 100% { opacity: 0.85; transform: translate(-50%, -50%) scale(1); }
+  50%      { opacity: 1; transform: translate(-50%, -50%) scale(1.12); }
+}
+
+/* ── 光晕呼吸（数据微光） ── */
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.55; }
+  50%      { opacity: 1; }
+}
+
+/* ── 向上滑入 ── */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(35px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── 向下滑入 ── */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── 从右滑入 ── */
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ── 按钮闪光扫过 ── */
+@keyframes shine {
+  0%   { transform: translateX(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) rotate(45deg); }
+}
+
+/* ── 状态脉冲 ── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%      { opacity: 0.6; transform: scale(1.1); }
+}
+
+/* ── 旋转加载 ── */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ── 淡入 ── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── 弹入 ── */
+@keyframes bounceIn {
+  0%   { opacity: 0; transform: scale(0.3); }
+  50%  { transform: scale(1.05); }
+  70%  { transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* ── Toast 滑入/滑出 ── */
+@keyframes toastIn {
+  from { opacity: 0; transform: translateX(80px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes toastOut {
+  from { opacity: 1; transform: translateX(0); }
+  to   { opacity: 0; transform: translateX(80px); }
+}
+
+/* ── 进度条 ── */
+@keyframes shrinkRight {
+  from { transform: scaleX(1); }
+  to   { transform: scaleX(0); }
+}
+
+/* ── 路由过渡 ── */
+.fade-slide-enter-active { animation: slideUp 0.35s ease-out; }
+.fade-slide-leave-active { animation: fadeIn 0.2s ease-in reverse; }
+
+/* ════════════════════════════════════════
+   答辩级新增动效
+   ════════════════════════════════════════ */
+
+/* ── 极光呼吸灯（连接核心·未连接） ── */
+@keyframes auraBreathe {
+  0%, 100% { box-shadow: 0 0 24px rgba(34, 211, 238, 0.35),
+                         inset 0 0 20px rgba(34, 211, 238, 0.15); }
+  50%      { box-shadow: 0 0 56px rgba(34, 211, 238, 0.65),
+                         inset 0 0 34px rgba(34, 211, 238, 0.32); }
+}
+
+/* ── 环形流光旋转（搜索中） ── */
+@keyframes ringSpin {
+  to { transform: rotate(360deg); }
+}
+@keyframes ringSpinReverse {
+  to { transform: rotate(-360deg); }
+}
+
+/* ── 成功锁定：闭环流光 ── */
+@keyframes lockGlow {
+  0%   { box-shadow: 0 0 20px rgba(52, 211, 153, 0.4); }
+  50%  { box-shadow: 0 0 60px rgba(52, 211, 153, 0.8); }
+  100% { box-shadow: 0 0 24px rgba(52, 211, 153, 0.45); }
+}
+
+/* ── 脉冲扩散（预警/障碍） ── */
+@keyframes pulseRing {
+  0%   { transform: scale(0.6); opacity: 0.8; }
+  100% { transform: scale(2.4); opacity: 0; }
+}
+
+/* ── 数据流向下滚动（日志终端） ── */
+@keyframes logScroll {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── 扫描线（监控屏质感） ── */
+@keyframes scanline {
+  0%   { top: -10%; }
+  100% { top: 110%; }
+}
+
+/* ── 数值发光闪烁（数据刷新时） ── */
+@keyframes valueFlash {
+  0%   { color: #fff; text-shadow: 0 0 16px rgba(34,211,238,0.9); }
+  100% { color: var(--color-text); text-shadow: none; }
+}
+
+/* ── 卡片入场错峰 ── */
+@keyframes cardIn {
+  from { opacity: 0; transform: translateY(16px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
